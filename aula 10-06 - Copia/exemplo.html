@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo JavaScript</title>
+    
+    <!-- JavaScript no <head> -->
+    <script>
+        document.write("Este script está no head e será executado primeiro.");
+    </script>
+</head>
+<body>
+    <h1>Exemplo de JavaScript</h1>
+    <p>Conteúdo da página...</p>
+    
+    <!-- JavaScript no <body> -->
+    <script>
+         document.write("Este script está no body e será executado após o carregamento do conteúdo.");
+        // Função para ser chamada após o carregamento da página
+        function mensagem() {
+            alert("Este script está no body e será executado após o carregamento do conteúdo.");
+        }
+        
+        // Chamada da função após o carregamento da página
+        window.onload = mensagem;
+    </script>
+
+    
+</body>
+</html>
